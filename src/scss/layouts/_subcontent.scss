@@ -1,0 +1,17 @@
+.subcontent {
+  padding-top: 170px;
+  padding-bottom: 150px;
+
+  & p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 164%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+}

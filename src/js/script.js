@@ -1,1 +1,1 @@
-console.log('BOOST');
+$(function () {});

@@ -1,2 +1,10 @@
-$black: #000;
-$white: #fff;
+$primary: #e31e24;
+$secondary: #2d4191;
+
+@mixin h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 164%;
+  text-transform: uppercase;
+  color: $secondary;
+}

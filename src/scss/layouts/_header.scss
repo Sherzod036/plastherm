@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 888;
+  padding: 35px 0;
+  &__teaser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $secondary;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
