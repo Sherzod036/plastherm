@@ -32,7 +32,7 @@ function bmjs() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/gsap/dist/gsap.js',
-    'src/js/script.js',
+    'src/js/*.js',
   ])
     .pipe(concat('bundle.min.js'))
     .pipe(uglify())

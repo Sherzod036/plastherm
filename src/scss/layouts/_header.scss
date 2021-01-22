@@ -16,6 +16,7 @@
 }
 
 .nav {
+  position: relative;
   &__list {
     display: flex;
     align-items: center;
@@ -23,9 +24,14 @@
 
   &__item {
     margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {
+    font-weight: 600;
     font-size: 1.6rem;
     text-transform: uppercase;
     color: $secondary;
@@ -35,4 +41,126 @@
       color: $primary;
     }
   }
+}
+
+.lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 37px;
+  border: 1px solid #c4c4c4;
+  border-radius: 18px;
+  margin-left: 50px;
+
+  &__link {
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 164%;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:first-child {
+      margin-right: 11px;
+    }
+
+    &_lighted {
+      color: #fff;
+      transition: 0.3s;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: #e31e24;
+    border-radius: 50%;
+    left: 5px;
+
+    &_lefted {
+      transform: translateX(0px);
+      transition: 0.3s;
+    }
+
+    &_righted {
+      transform: translateX(30px);
+      transition: 0.3s;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 35px;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  padding: 13px 40px;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 10px 10px;
+  transition: 0.5s;
+
+  &_open {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      margin-left: 5px;
+      margin-top: -2px;
+      transition: 0.3s;
+    }
+  }
+
+  &_open:hover {
+    & svg path {
+      fill: $primary;
+      transition: 0.3s;
+    }
+  }
+
+  &-svg {
+    transform: rotate(180deg);
+    & path {
+      fill: $primary;
+    }
+  }
+
+  &__item {
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 145%;
+    color: $secondary;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &_opened {
+    top: 25px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
 }

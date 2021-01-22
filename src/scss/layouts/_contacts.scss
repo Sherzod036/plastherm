@@ -1,0 +1,106 @@
+.contacts {
+  padding: 80px 0;
+  position: relative;
+
+  &__pic {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+
+  &__title {
+    @include h1;
+    text-align: center;
+    line-height: none;
+    margin-bottom: 30px;
+  }
+
+  &__teaser {
+    align-items: center;
+  }
+
+  &__bg {
+    max-width: 400px;
+    height: 411px;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__ico {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background: $secondary;
+    border-radius: 10px;
+  }
+
+  &__inner {
+    padding-left: 30px;
+    width: 85%;
+
+    & span {
+      display: block;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 150%;
+      color: #333333;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #333333;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.showonmap {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: $secondary;
+  transition: 0.3s;
+
+  &:hover {
+    color: $primary;
+  }
+}

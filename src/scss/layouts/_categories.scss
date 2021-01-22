@@ -1,5 +1,5 @@
 .categories {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .category {
@@ -73,5 +73,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
+
+    & img {
+      display: block;
+    }
   }
 }

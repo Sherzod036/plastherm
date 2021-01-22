@@ -7,12 +7,26 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+::selection {
+  background: $secondary;
+  color: #fff;
+}
+
 :root {
   font-size: 10px;
 }
 
 body {
-  height: 5000px;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $secondary;
+  outline: 1px solid #fff;
 }
 
 li {
