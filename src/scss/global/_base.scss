@@ -18,6 +18,7 @@
 
 body {
   position: relative;
+  height: 5000px;
 }
 
 body::-webkit-scrollbar {
@@ -58,4 +59,12 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.bg_light {
+  background: #fff !important;
+}
+
+.page-about__bg {
+  background: #ebf2f7 !important;
 }
