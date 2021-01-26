@@ -1,2 +1,3 @@
 [0122/125309.574:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [0122/214822.517:ERROR:process_info.cc(359)] UncheckedAllocate
+[0125/001620.070:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

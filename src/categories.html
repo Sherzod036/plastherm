@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLASTHERM</title>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+  </head>
+  <body class="page-categories__body">
+    <div class="popup">
+      <div class="popup__content">
+        <span class="popup__back">
+          <img src="img/popup_back.svg" alt="" />
+        </span>
+        <span class="popup__close">
+          <img src="img/popup_close.svg" alt="" />
+        </span>
+        <div class="owl-carousel popup__slider">
+          <div class="popup__slider-item">
+            <img src="img/product.jpg" alt="" />
+          </div>
+          <div class="popup__slider-item">
+            <img src="img/product.jpg" alt="" />
+          </div>
+        </div>
+
+        <span class="popup__title">Труба ППР КОМПОЗИТ ДЛЯ ГВС PN25</span>
+
+        <div class="popup__inner">
+          <div class="popup__info">
+            <table
+              class="popup__table"
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+            >
+              <tr>
+                <th>Код</th>
+                <th>Размер</th>
+                <th>Едн.</th>
+              </tr>
+              <tr>
+                <td>PF101</td>
+                <td>20x3.4 мм</td>
+                <td class="bn">100</td>
+              </tr>
+              <tr>
+                <td>PF101</td>
+                <td>20x3.4 мм</td>
+                <td class="bn">100</td>
+              </tr>
+              <tr>
+                <td>PF101</td>
+                <td>20x3.4 мм</td>
+                <td class="bn">100</td>
+              </tr>
+              <tr>
+                <td>PF101</td>
+                <td>20x3.4 мм</td>
+                <td class="bn">100</td>
+              </tr>
+            </table>
+
+            <div class="popup__btn-external">
+              <a class="popup__btn" href="#">Отправить запрос</a>
+            </div>
+          </div>
+          <form class="popup__form" action="/">
+            <input name="name" type="text" placeholder="Ваше имя" required />
+            <input
+              name="phone"
+              id="phone"
+              type="text"
+              placeholder="Ваше Телефон"
+              required
+            />
+            <button type="submit">Отправить запрос</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    @@include('chunks/_subscribe.html') @@include('chunks/_header-pages.html')
+
+    <div class="banner banner_categories">
+      <div class="banner__pic">
+        <img src="img/banner_pic.jpg" alt="" />
+      </div>
+      <div class="container banner__teaser">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <div class="separator">/</div>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">Продукты из Полипропилена</span>
+            </li>
+          </ul>
+        </div>
+        <h2 class="banner__title">Продукты из Полипропилена</h2>
+      </div>
+    </div>
+
+    <div class="page-categories">
+      <div class="container">
+        <div class="row products">
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            @@include('chunks/_product.html')
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('chunks/_contacts.html') @@include('chunks/_footer.html')
+
+    <script src="js/bundle.min.js"></script>
+  </body>
+</html>

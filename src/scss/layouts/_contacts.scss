@@ -11,6 +11,7 @@
 
   &__title {
     @include h1;
+    position: relative;
     text-align: center;
     line-height: none;
     margin-bottom: 30px;

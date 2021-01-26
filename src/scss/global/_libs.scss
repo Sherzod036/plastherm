@@ -1,0 +1,45 @@
+.partners .owl-carousel .owl-item img {
+  width: unset !important;
+  margin: 0 auto;
+}
+
+.popup .owl-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+
+  & .owl-prev {
+    position: absolute;
+    left: 18px;
+  }
+
+  & .owl-next {
+    position: absolute;
+    right: 18px;
+  }
+
+  & .prev_arrow {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  & .next_arrow {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  background: $secondary;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background-color: $secondary;
+}
+
+.hamburger.is-active:hover,
+.hamburger:hover {
+  opacity: 1;
+}

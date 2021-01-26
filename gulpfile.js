@@ -16,6 +16,7 @@ function bmcss() {
   return src([
     'node_modules/bootstrap/dist/css/bootstrap-grid.css',
     'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+    'node_modules/hamburgers/dist/hamburgers.css',
     'src/scss/**/*.scss',
   ])
     .pipe(sass())
@@ -34,6 +35,7 @@ function bmjs() {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/gsap/dist/gsap.js',
     'node_modules/owl.carousel/dist/owl.carousel.js',
+    'node_modules/inputmask/dist/jquery.inputmask.js',
     'src/js/*.js',
   ])
     .pipe(concat('bundle.min.js'))

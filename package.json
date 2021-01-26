@@ -24,6 +24,8 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
+    "hamburgers": "^1.1.3",
+    "inputmask": "^5.0.5",
     "owl.carousel": "^2.3.4"
   }
 }
